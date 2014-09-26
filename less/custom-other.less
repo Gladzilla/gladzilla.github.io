@@ -1,0 +1,340 @@
+p,ul {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 2em;
+	@media (min-width: @screen-md) {
+		font-size: 1.2em;
+		line-height: 2em;
+	}
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Righteous', sans-serif;
+}
+#small {
+	width: 100%;
+	@media (min-width: @screen-xs) {
+		.responsive-invisibility();
+	}
+}
+#big {
+	.responsive-invisibility();
+	@media (min-width: @screen-xs) {
+		.responsive-visibility();
+	}
+	@media (min-width: 1600px) {
+		.responsive-invisibility();
+	}
+}
+#huge {
+	.responsive-invisibility();
+	@media (min-width: 1600px) {
+		.responsive-visibility();
+	}
+}
+.carousel-caption {
+	p {
+		font-size: 1.5em;
+		line-height: 1.2em;
+		color: #F7E1B5;
+	}
+	h1 {
+		color: #F7E1B5;
+		@media (min-width: 1600px) {
+			font-size: 4em;
+			.responsive-visibility();
+		}
+	}
+}
+#carousel-example-generic {
+	margin-top: 53px;
+}
+
+#black_bar {
+	background-color: #000;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: auto;
+	height: auto;
+	margin-top: -2px;
+	h1 {
+		text-align: center;
+		.center-block();
+		.hide {
+			display:none;
+		}
+		#phone {
+			width: 100%;
+			@media (min-width: @screen-sm) {
+				.responsive-invisibility();
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		#all_else {
+			.responsive-invisibility();
+			@media (min-width: @screen-sm) {
+				.responsive-visibility();
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+				width: 720px;
+			}
+			@media (min-width: @screen-md){
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+				width: 800px;
+			}
+		}
+	}
+}
+#grey_bar {
+	background-color: #123851;
+	margin-top: 2em;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: auto;
+	height: auto;
+	padding-top: 3em;
+	padding-bottom: 100px;
+}
+
+#purple {	
+	margin-top: 0px;
+	padding-bottom: 0px;
+	background-color: #961a20;
+	padding-bottom: 4em;
+	margin-bottom: 2em;
+	padding-top: 2em;
+	img {
+		width: 500px;
+		.center-block();
+		opacity: 0.1;
+	}
+	h1 {
+		font-size: 3em;
+		color: #03c4fc;
+		@media (min-width: @screen-sm) {
+			font-size: 4em;
+		}
+	}
+	h5, p {
+		color: #fff;
+	}
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.2em;
+		@media (min-width: @screen-xs) {
+			font-size: 1.4em;
+		}
+		@media (min-width: @screen-sm) {
+		}
+		@media (min-width: @screen-md) {
+			font-size: 1.6em;
+		}
+		@media (min-width: @screen-lg) {
+			font-size: 1.8em;
+		}
+	}
+}
+#white {
+	margin-top: 0px;
+	padding-bottom: 0px;
+	background-color: #fff;
+	padding-bottom: 1em;
+	margin-bottom: 0.5em;
+	h5, p {
+		color: #961a20;
+		padding-bottom: 1.5em;
+	}
+	p {
+		font-size: 1.2em;
+		@media (min-width: @screen-xs) {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.4em;
+		}
+		@media (min-width: @screen-sm) {
+		}
+		@media (min-width: @screen-md) {
+			font-size: 1.6em;
+		}
+		@media (min-width: @screen-lg) {
+			font-size: 1.8em;
+		}
+	}
+}
+#middle_content {
+	.make-row();
+	.center-block();
+	#instruction {
+		p {
+			padding-bottom: 1em;
+		}
+		img {
+			width: 100%;
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+		.make-sm-column(6);
+		@media(min-width: 500px){
+			padding-right: 50px;
+		}
+	}
+	#classes_location {
+		img {
+			width: 100%
+		}
+		.make-sm-column(6);
+		@media(min-width: 500px){
+			padding-left: 50px;
+		}
+	}
+}
+#schedule {
+	p, h2, h5 {
+		color: #F7E1B5;
+	}
+	#calendar_row {
+		.make-row();
+		.center-block();
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		p {
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+			line-height: 1.5em;
+		}
+		@media(min-width: @screen-sm){
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			border-color: #73B7C9;
+		}
+		#day {
+			.make-sm-column(2);
+			p {
+				font-family: 'Righteous', sans-serif;
+				color: #D1AF6D;
+			}
+			@media(min-width: @screen-sm){
+				padding-right: 50px;
+				text-indent: -10px;
+			}
+		}
+		#time {
+			.make-sm-column(4);
+			@media(min-width: @screen-sm){
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+		}
+		#class_format {
+			.make-sm-column(6);
+			@media(min-width: @screen-sm){
+				padding-left: 50px;
+			}
+		}
+	}
+}
+#masthead {	
+	width: 100%;
+	margin-top: -53px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: #000;
+	padding-bottom: 9px;
+	margin-bottom: 0px;
+	z-index: 999;
+}
+.top-correct {
+	margin-top: 53px;
+}
+#navigation {
+	ul {
+		padding: 19px 0px 0px 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		text-align: center;
+		@media (min-width: @screen-sm){
+			width: 700px;	
+			.center-block();
+			text-align: left;
+		}
+		@media (min-width: @screen-md){
+			width: 850px;
+			.center-block();
+			text-align: left;
+		}
+		@media (min-width: @screen-lg){
+			width: 1000px;
+			.center-block();
+			text-align: left;
+		}
+		li {
+			list-style-type: none;
+			display: inline;
+			list-style-position: outside;
+		}
+		li a {
+			float: left;
+			margin: 0px 0px 0px 0px;
+			padding: 26px 15px 17px 15px;
+			width: 100px;
+			font-size: 12pt;
+			line-height: 25pt;
+			text-decoration: none;
+			color: #FFF;
+		}
+		li a:focus {
+			background-color: #123851;
+		}
+		li a:last-child {
+			float: none;
+		}
+		li a:hover,
+		li a:active {
+			background-color: #123851;
+			-webkit-transition: all 0.25s ease-in-out;
+			  -moz-transition: all 0.25s ease-in-out;
+			  -ms-transition: all 0.25s ease-in-out;
+			  -o-transition: all 0.25s ease-in-out;
+			  transition: all 0.25s ease-in-out;
+		}
+	}
+}
+
+hr {
+	margin: 0px 0px 0px 0px;
+}
+#footer {
+	margin-top: 4em;
+	img {
+		padding-bottom: 1em;
+		padding-left: 5px;
+		float: left;
+	}
+	img:last-child {
+		float: none
+	}
+	p {
+		font-size: 0.8em;
+		color: #73B7C9;
+	}
+}
+#now_you_dont {
+	display: none;
+}
+/*--------animation fades-------------*/
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration:1s;
+    animation-delay: 0s
+}

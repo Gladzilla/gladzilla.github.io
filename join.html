@@ -1,0 +1,85 @@
+---
+layout: default
+title: Railroad Square Jiu Jitsu
+id: join
+---
+
+<!-- HOW TO JOIN-->
+<div class="top-correct"></div>
+<div class="animated bounceInDown">
+<div id="purple">
+    <div class="container">
+        <div id="join">
+            <h1>Interested?</h1>
+            <p>Come check us out for free. We only request that you contact us first through this contact form and we'll tell you a good class time to first attend.</p>
+        </div>
+    </div>
+</div>
+<!--insert mail form-->
+
+<div class="container">
+    <div id="join">
+            <form class="form-horizontal" role="form" id="formy">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Your e-mail</label>
+                <div class="col-sm-10">
+                  <input type="email" name="_replyto" class="form-control input-lg" id="inputEmail3" placeholder="Email">
+                </div>
+                <div class="form-group" id="now_you_dont">
+                  <label for="inputEmail" class="col-sm-2 control-label">Subject</label>
+                  <div  class="col-sm-10">
+                    <input type='text' name='subject' class="form-control input-lg" id="gtfo"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="inputName3" class="col-sm-2 control-label">Name</label>
+                  <div class="col-sm-10">
+                      <input type="text" name="_name" class="form-control input-lg" rows="1" placeholder="Name"></input>
+                  </div>
+                </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+                <div class="col-sm-10">
+                    <textarea name="body" class="form-control input-lg" rows="3" placeholder="Tell us about yourself. Any past experience?" id="my_message"></textarea>
+      
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <input type="submit" class="btn btn-default" value="Submit" id="the_button">
+                </div>
+              </div>
+            </form>
+        <h3>Cost</h3>
+        <p>The club fees are $60/month, due at the beginning of every month. Unlike most athletic clubs and gyms, there is no annual contract.  If you decide after a couple months you want to quit, you don’t owe additional fees.</p>
+        <h3>Uniforms</h3>
+        <p>Come with a clean gi or appropriate no-gi uniform, mouthguard and athletic cup. If you're new to jiu-jitsu and don't own a gi, don't let that stop you from coming. We have a couple spares you can borrow until you buy one, and if you wait to talk to one of us before you buy a gi, we can help you make a good purchase.</p>
+</div><!--bounceInDown-->
+        <div class="alert alert-danger">
+            <h3>Disclaimer</h3>
+            <p class="bg-danger"><strong>BRAZILIAN JIU-JITSU IS DANGEROUS AND YOU PARTICIPATE AT YOUR OWN RISK.</strong>  No one at Railroad Square Jiu-jitsu is pressured to do anything they don’t feel comfortable doing, and almost all of our students have sat out of some of the drills and sparring at one time or another due to injuries or personal judgement of their physical limitations and potential hazard. <strong>This is a full-contact sport and injuries commonly occur.</strong> Because of the dangerous nature of BJJ, all participants are expected to make safety their first priority.</p>
+        </div>
+    </div>
+</div>
+<script>
+    var submitter = document.getElementById("the_button"); 
+    var form = document.getElementById("formy");
+    var subjectInput = document.getElementById("gtfo");
+    var puppy = true;
+    var canary_in_coalmine = subjectInput.value;
+    function confirmation(){
+      if (document.getElementById("gtfo").value == "") {
+        form.setAttribute("action", "http://getsimpleform.com/messages?form_api_token=c4e10669a1e06a9dd3985bf2ac648d76");
+        form.setAttribute("method", "post");
+        alert("Glad to see you're interested. We'll contact you shortly.");
+      } else {
+        alert("Thank you.");
+      };
+    };
+    submitter.onclick = confirmation;
+</script>
+
+
+
+
