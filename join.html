@@ -66,13 +66,16 @@ id: join
     var submitter = document.getElementById("the_button"); 
     var form = document.getElementById("formy");
     var subjectInput = document.getElementById("gtfo");
-    var puppy = true;
     var canary_in_coalmine = subjectInput.value;
     function confirmation(){
       if (document.getElementById("gtfo").value == "") {
         form.setAttribute("action", "http://getsimpleform.com/messages?form_api_token=c4e10669a1e06a9dd3985bf2ac648d76");
         form.setAttribute("method", "post");
-        alert("Glad to see you're interested. We'll contact you shortly.");
+        for (var i = 0; i < 100000000; i++) {
+          if (i==99999999){
+            alert("Glad to see you are interested. We will contact you shortly.");
+          }else{};
+        };
       } else {
         alert("Thank you.");
       };
